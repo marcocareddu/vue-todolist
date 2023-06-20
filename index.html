@@ -39,43 +39,11 @@
 
                 <!-- List -->
                 <ul class="list-group">
-                    <li class="list-group-item">
+                    <li v-for="task in list" class="list-group-item">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="">
                             <label class="form-check-label" for="flexCheckDefault">
-                                An item
-                            </label>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                A second item
-                            </label>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                A third item
-                            </label>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                A fourth item
-                            </label>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                And a fifth one
+                                {{task.text}}
                             </label>
                         </div>
                     </li>
