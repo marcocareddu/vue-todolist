@@ -16,6 +16,13 @@ const app = createApp({
                 { id: 7, done: false, text: `Montare l'ombreggiante` },
             ]
         }
+    },
+    methods: {
+
+        // Remove item from list and same listfiltered replaced
+        removeItem(currentId) {
+            this.list = this.list.filter((singleTask) => currentId !== singleTask.id);
+        },
     }
 });
 
