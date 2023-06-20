@@ -22,8 +22,8 @@ Inseriamo un filtro per cercare all'interno dei task -->
 # TODO LIST VUE
 ## Fase 1 - Preliminare
 - [x] Creare un markup HTML della lista.
-- [ ] Creare un array di oggetti `list` con `text`, `done` ed `id`.
-- [ ] Creare in data, una nuvoa voce `newTask` con valore stringa vuota.
+- [x] Creare un array di oggetti `list` con `text`, `done` ed `id`.
+- [x] Creare in data, una nuvoa voce `newTask` con valore stringa vuota.
 
 ## Fase 2 - Svolgimento
 - **PER OGNI** elemento all'interno di `list`:
