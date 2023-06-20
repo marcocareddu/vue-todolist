@@ -19,3 +19,22 @@ SUPERBONUS
 Inseriamo un filtro per cercare all'interno dei task -->
 
 
+# TODO LIST VUE
+## Fase 1 - Preliminare
+- Creare un markup HTML della lista.
+- Creare un array di oggetti `list` con `text`, `done` ed `id`.
+- Creare in data, una nuvoa voce `newTask` con valore stringa vuota.
+
+## Fase 2 - Svolgimento
+- **PER OGNI** elemento all'interno di `list`:
+    - Renderizzare un `<li>` con all'interno `list.text`.
+- **V-IF** se `done` è true:
+    - Aggiungi la classe `line-through`.
+- Collegare la X di eliminazione allo stesso `id` dell'elemento.
+- Creare una funzione in methods chiamata `removeItem` che rimuove l'elemento id.
+- Collegare `removeItem` alla X di eliminazione.
+- Creare una funzione `createTask` che genera un nuovo oggetto `task`.
+- Collegare una casella di input con bottone, con `v-model` a `newTask`.
+    - Collegare il bottone a `createTask`.
+    - Collegare l'input a `createTask` tramite @keyup.enter.
+- Collegare `<li>` al click ed aggiungere la classe `line-through`.
