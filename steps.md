@@ -33,8 +33,8 @@ Inseriamo un filtro per cercare all'interno dei task -->
 - [x] Collegare la X di eliminazione allo stesso `id` dell'elemento.
 - [x] Creare una funzione in methods chiamata `removeItem` che rimuove l'elemento id.
 - [x] Collegare `removeItem` alla X di eliminazione.
-- [ ] Creare una funzione `createTask` che genera un nuovo oggetto `task`.
-- [ ] Collegare una casella di input con bottone, con `v-model` a `newTask`.
-    - [ ] Collegare il bottone a `createTask`.
-    - [ ] Collegare l'input a `createTask` tramite @keyup.enter.
+- [x] Creare una funzione `createTask` che genera un nuovo oggetto `task`.
+- [x] Collegare una casella di input con bottone, con `v-model` a `newTask`.
+    - [x] Collegare il bottone a `createTask`.
+    - [x] Collegare l'input a `createTask` tramite @keyup.enter.
 - [ ] Collegare `<li>` al click ed aggiungere la classe `line-through`.
