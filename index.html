@@ -37,7 +37,7 @@
         <div class="container">
             <div class="big-box mt-5">
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Cerca...">
+                    <input v-model="taskToSearch" type="text" class="form-control" placeholder="Cerca...">
                 </div>
 
                 <!-- List -->
@@ -61,8 +61,8 @@
                     </li>
                 </ul>
                 <div class="input-group my-3">
-                    <input @keyup.enter="addTask(newTask)" type="text" class="form-control" placeholder="Aggiungi task"
-                        v-model="newTask">
+                    <input @keyup.enter.trim="addTask(newTask)" type="text" class="form-control"
+                        placeholder="Aggiungi task" v-model.trim="newTask">
                     <button @click="addTask(newTask)" class="btn btn-success" type="button"><i
                             class="bi bi-plus-circle"></i></button>
                 </div>
