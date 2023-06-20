@@ -23,8 +23,7 @@ const app = createApp({
             tempId = 0;
             this.list.forEach(element => {
                 if (element.id >= tempId) {
-                    tempId = element.id;
-                    tempId++
+                    tempId = ++element.id;
                 }
             });
             return tempId;
@@ -43,8 +42,6 @@ const app = createApp({
             const singleTask = { id: this.createId, done: false, text: userInput };
             this.list.push(singleTask);
         },
-
-
     }
 });
 
