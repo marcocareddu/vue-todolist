@@ -41,6 +41,7 @@ const app = createApp({
         addTask(userInput) {
             const singleTask = { id: this.createId, done: false, text: userInput };
             this.list.push(singleTask);
+            this.newTask = '';
         },
     }
 });
