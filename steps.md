@@ -37,4 +37,4 @@ Inseriamo un filtro per cercare all'interno dei task -->
 - [x] Collegare una casella di input con bottone, con `v-model` a `newTask`.
     - [x] Collegare il bottone a `createTask`.
     - [x] Collegare l'input a `createTask` tramite @keyup.enter.
-- [ ] Collegare `<li>` al click ed aggiungere la classe `line-through`.
+- [x] Collegare `<li>` al click ed aggiungere la classe `line-through`.
