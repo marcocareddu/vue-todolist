@@ -33,10 +33,10 @@ const app = createApp({
 
         // Search in new list copy
         searchedList() {
-
+            const word = this.taskToSearch.toLowerCase();
+            return this.list.filter((singleTask) => singleTask.text.toLowerCase().includes(word));
         }
     },
-
 
     methods: {
         // Remove item from list and same listfiltered replaced
