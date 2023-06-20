@@ -26,8 +26,8 @@ Inseriamo un filtro per cercare all'interno dei task -->
 - [x] Creare in data, una nuvoa voce `newTask` con valore stringa vuota.
 
 ## Fase 2 - Svolgimento
-- **PER OGNI** elemento all'interno di `list`:
-    - Renderizzare un `<li>` con all'interno `list.text`.
+- [x] **PER OGNI** elemento all'interno di `list`:
+    - [x] Renderizzare un `<li>` con all'interno `list.text`.
 - **V-IF** se `done` è true:
     - Aggiungi la classe `line-through`.
 - Collegare la X di eliminazione allo stesso `id` dell'elemento.
