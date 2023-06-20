@@ -38,3 +38,10 @@ Inseriamo un filtro per cercare all'interno dei task -->
     - [x] Collegare il bottone a `createTask`.
     - [x] Collegare l'input a `createTask` tramite @keyup.enter.
 - [x] Collegare `<li>` al click ed aggiungere la classe `line-through`.
+- [x] Creare una variabile `taskToSearch` da collegare all'input di ricerca in DOM.
+- [x] Creare una funzione `searchedList` che genera un array nuovo "filtrato".
+    - [x] **FILTER** di ogni elemento di `list`.
+    - [x] *Ritorna* un array filtrato da `taskToSearch`.
+- [x] Sostituire nel DOM l'array che genera i `<li>` con quello generato da `searchedList`.
+
+
