@@ -6,6 +6,7 @@ const app = createApp({
     data() {
         return {
             newTask: '',
+            taskToSearch: '',
             list: [
                 { id: 1, done: false, text: `Tagliare il prato` },
                 { id: 2, done: false, text: `Dare l'acqua alle piante` },
@@ -28,6 +29,11 @@ const app = createApp({
                 }
             });
             return tempId;
+        },
+
+        // Search in new list copy
+        searchedList() {
+
         }
     },
 
