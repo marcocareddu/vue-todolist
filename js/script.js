@@ -45,8 +45,8 @@ const app = createApp({
             this.newTask = '';
         },
 
+        // Toggle done stats
         toggleStats(currentId) {
-
             this.list.forEach((singleTask) => {
                 if (singleTask.id === currentId) {
                     singleTask.done = !singleTask.done;
