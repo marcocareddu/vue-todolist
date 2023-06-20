@@ -4,3 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Header */
+header {
+    height: 80px;
+    background-color: lightblue;
+    border-bottom: 2px solid #cdd4da;
+}
+
+.big-box {
+    margin: 0 auto;
+    width: 500px;
+}
