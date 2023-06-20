@@ -23,7 +23,8 @@ const app = createApp({
             tempId = 0;
             this.list.forEach(element => {
                 if (element.id >= tempId) {
-                    tempId = ++element.id;
+                    tempId = element.id;
+                    ++tempId
                 }
             });
             return tempId;
@@ -43,6 +44,15 @@ const app = createApp({
             this.list.push(singleTask);
             this.newTask = '';
         },
+
+        toggleStats(currentId) {
+
+            this.list.forEach((singleTask) => {
+                if (singleTask.id === currentId) {
+                    singleTask.done = !singleTask.done;
+                };
+            });
+        }
     }
 });
 
