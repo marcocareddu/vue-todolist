@@ -61,7 +61,8 @@
                     </li>
                 </ul>
                 <div class="input-group my-3">
-                    <input type="text" class="form-control" placeholder="Aggiungi task" v-model="newTask">
+                    <input @keyup.enter="addTask(newTask)" type="text" class="form-control" placeholder="Aggiungi task"
+                        v-model="newTask">
                     <button @click="addTask(newTask)" class="btn btn-success" type="button"><i
                             class="bi bi-plus-circle"></i></button>
                 </div>
