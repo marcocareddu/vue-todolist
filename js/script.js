@@ -23,6 +23,11 @@ const app = createApp({
         removeItem(currentId) {
             this.list = this.list.filter((singleTask) => currentId !== singleTask.id);
         },
+
+        addTask(userInput) {
+            const singleTask = { id: 345, done: false, text: userInput };
+            this.list.push(singleTask);
+        }
     }
 });
 
