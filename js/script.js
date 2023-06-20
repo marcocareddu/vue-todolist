@@ -17,17 +17,34 @@ const app = createApp({
             ]
         }
     },
-    methods: {
+    computed: {
+        // Create new ID 
+        createId() {
+            tempId = 0;
+            this.list.forEach(element => {
+                if (element.id >= tempId) {
+                    tempId = element.id;
+                    tempId++
+                }
+            });
+            return tempId;
+        }
+    },
 
+
+    methods: {
         // Remove item from list and same listfiltered replaced
         removeItem(currentId) {
             this.list = this.list.filter((singleTask) => currentId !== singleTask.id);
         },
 
+        // Create single task and push to list
         addTask(userInput) {
-            const singleTask = { id: 345, done: false, text: userInput };
+            const singleTask = { id: this.createId, done: false, text: userInput };
             this.list.push(singleTask);
-        }
+        },
+
+
     }
 });
 
